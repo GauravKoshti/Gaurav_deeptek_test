@@ -5,6 +5,7 @@ web:
     - 9393:9393
   volumes:
     - ./inputFile:/csvserver/inputdata
-  image: prom/prometheus:v2.22.0
-  ports:
-    - 9090:9090
+ prometheus:
+   image: prom/prometheus:v2.22.0
+   ports:
+     - 9090:9090
