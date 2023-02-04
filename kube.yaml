@@ -1,0 +1,31 @@
+apiVersion: v1
+
+kind: deployment
+
+metadata:
+
+  name: deeptek
+
+  labels:
+
+    app: web
+
+spec:
+
+  containers:
+
+    - name: csvserver
+
+      image: sandipholambe/csvserver:latest
+
+      ports:
+
+        - containerPort: 9393
+
+    - name: prometheus
+
+      image: prom/prometheus:v2.22.0
+
+      ports:
+
+        - containerPort: 9090
