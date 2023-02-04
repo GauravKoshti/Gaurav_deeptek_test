@@ -1,0 +1,7 @@
+web:
+  image: sandipholambe/csvserver:latest
+  container_name: gaurav
+  ports:
+    - 9393:9393
+  volumes:
+    - ./inputFile:/csvserver/inputdata
