@@ -1,0 +1,2 @@
+#docker run command with the port
+docker run -d -p 9393:9393 -v /home/ubuntu/DeepTek_test/solution/inputFile:/csvserver/inputdata sandipholambe/csvserver:latest
